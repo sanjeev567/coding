@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /* flex box is defined separately for container as well as items in that container therefore we make container as flex not its items */
+        .container{
+            display: flex;  /*this will make display as a flex*/
+            width: 100%;
+            /* height: 566px; */
+            height: auto;
+            border: 2px solid rgb(51, 1, 1);
+            margin: 10px 10px;
+            padding: 4px 4px;
+
+            /* flex properties for flex containers  */
+
+            /* flex-direction: row; (by default) */
+            /* flex-direction: column;  */
+            flex-direction: row-reverse;
+            /* flex-direction: column-reverse;  */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: wrap row;shorthand for flex-direction and flex-wrap both in the same line */
+            /* jsutify content will justify the content in the horizontal direction  */
+            justify-content: center;
+            justify-content: space-between; /*same space between any two box excluding leftmost and rightmost*/
+            justify-content: space-evenly;      /*same space between any two box including leftmost and rightmost*/
+            justify-content: space-around;/*same space between any two but less than in leftmost or rightmost*/
+
+            /* jsutify content will justify the content in the vertical direction  */
+
+            align-items: center;  /* this will make it vertically center*/
+            align-items: flex-end;  /* this will make it horizontally  center and downward*/
+            align-items: flex-start;  /* this will make it horizontally  center and upward*/
+            align-items: stretch;  /*this will make vertically evenly spaces between them*/
+            
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            margin: 10px 4px;
+            padding: 4px 4px;
+
+            border: 2px solid green;
+            background-color: tomato;
+
+
+
+        }
+        #item1{
+
+        /* flex properties for a items  */
+        /* order: 2; */ /*whose order will be high that box will be at last position.*/
+        /* flex-grow: 3;  this will make box1 3*times bigger when we change width of the container  */
+        /* negative numbers are invalid */
+        flex-shrink: 3;  /*unlike flex-grow this will work while we shrink our boxes */
+        /* flex-basis: 320; it will resize the width when flex direction will set to row  */
+        /* flex-basis: 320; it will resize the height when flex direction will set to column  */
+        }
+        #item2{
+
+        /* flex properties for a items  */
+        order: 40; /*higher the order last will be the element*/
+        }
+        #item3{
+            flex: 2 2 340px;  /*shorthand for flex-grow, flex-shrink and flex-basis:  ; */
+            align-self: flex-start; /*this will align item3 at top at its position.*/
+            align-self: flex-end;  /*this will align item3 at bottom at its position.*/
+            align-self: center;        /*this will align item3 at cebter at its position*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- FlesBox is a one dimensional layout method for laying out items in a row or colums
+    flexBox-> flexible + Box 
+    p {  proprety : value;}    -->
+    <h3>
+        This is flexBox tutorial
+    </h3>
+    <div class="container">
+        <div class="item" id="item1">First</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div>
+    </div>
+
+    
+</body>
+</html>

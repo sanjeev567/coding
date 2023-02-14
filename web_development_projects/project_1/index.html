@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul fitness</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset  */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/girl_fintness.jpg');
+            /* height: 1232px; */
+            color: white;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            width: 14%;
+            position: absolute;
+            left: 14px;
+            top: 2px;
+
+        }
+
+        .left img {
+            width: 185px;
+            margin: auto;
+            padding: 3px 5px;
+            filter: invert(100%);
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 12px;
+            font-size: 24px;
+            font-family: 'Baloo 2', cursive;
+
+        }
+
+        .mid {
+            /* border: 2px solid rgb(238, 205, 21); */
+            display: block;
+            width: 599px;
+            margin: 72px auto;
+            border-radius: 10px;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 5px 24px;
+        }
+
+        .navbar li a {
+            color: rgb(209, 28, 28);
+            text-decoration: none;
+            font-size: 26px;
+
+        }
+
+        .navbar li a:hover {
+            color: rgb(6, 71, 128);
+        }
+
+        .right {
+            /* border: 2px solid rgb(18, 219, 68); */
+            display: inline-block;
+            width: 18%;
+            position: absolute;
+            right: 14px;
+            top: 72px;
+
+
+        }
+
+        .btn {
+            margin: 2px 1px;
+            padding: 5px 24px;
+            border-radius: 10px;
+            background-color: rgb(30, 32, 30);
+            color: rgb(237, 243, 248);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(56, 50, 50);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 109px 90px;
+            padding: 66px 52px;
+            border-radius: 24px;
+            font-size: 20px;
+            width: 33%;
+        }
+
+        .form-group input {
+            display: block;
+            background-color: rgb(131, 63, 63);
+            color: white;
+            border-radius: 12px;
+            margin: 4px 38px;
+            padding: 17px 61px;
+            text-align: center;
+            font-size: 23px;
+        }
+
+        #submit {
+
+            display: block;
+            width: 30%;
+            margin: 3px auto;
+            padding: 8px 12px;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- for the left logo -->
+        <div class="left">
+            <img src="img/Dumbell.png" alt="">
+            <div class="dumbell">Gurukul fitness</div>
+        </div>
+        <!-- for the mid navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!-- for the right chat with us or something -->
+        <div class="right">
+            <button class="btn">call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of ara now</h2>
+        <form action="noactiion.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name:">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age:">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter your Mob no:">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender:">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality:">
+            </div>
+            <button class="btn" id="submit">Submit now</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

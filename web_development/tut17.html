@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, border, background</title>
+    <style>
+        #firstpara{
+            background-color: rgb(234,23,43);
+            height: 100px;
+            width: 400px;
+            border: 4px solid green;  /*Instead of writing below three line this line enough*/
+            /* border-width: 4px;
+            border-color: green;
+            border-style: solid; */
+            border-radius: 13px;
+        }
+        #secondpara{
+            background-color: rgb(194, 157, 160);
+            height: 100px;
+            width: 400px;
+            border-left: 4px solid rgb(234, 234,23);
+            border-top: 4px solid rgb(2, 19, 32);
+            border-right: 4px solid rgb(217, 8, 224);
+            border-bottom: 4px solid rgb(8, 8, 8);
+           border-top-right-radius: 12px;
+           border-top-left-radius: 5px;
+           border-bottom-left-radius: 18px;
+           border-bottom-right-radius: 18px;
+            
+        }
+    #thirdpara{
+        height: 500px;
+        width: 600px;
+        background-color:rgb(34,234,241);
+        background-image: url('https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276__340.jpg');
+        border: 2px solid red;
+        background-repeat: no-repeat; /*you can repeat it in x and y or x or y direcotion only*/
+        /* background-position: center center; */
+        /* background-position: top center; */  /*first cols for x and second for y */
+        
+        background-position: top center;
+
+    }
+
+    </style>
+</head>
+<body>
+    <h3>this is first box</h3>
+    <p id="firstpara">this is first para</p>
+    <h3>this is second box</h3>
+    <p id="secondpara">this is second para</p>
+    <h3>this is third box</h3>
+    <p id="thirdpara">this is third para</p>
+    
+</body>
+</html>

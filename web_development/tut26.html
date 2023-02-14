@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness, em, rem, vh and vw</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            width: 100vw;   /*veiw port for width*/
+            /* when we want to make container height and width full page; */
+            height: 100vh;    /*veiw port for height*/
+
+        }
+       
+        h1{
+            text-align: center;
+
+        }
+       
+        #one{
+            font-size: 3em; /*3 times of its parent*/
+            padding: 3em;/*3 times of its parent (now its parent is #one font-size*/
+
+            
+        }
+        #two{
+            font-size: 3rem;  /*this will 3 times of the html tag ie 75px*/
+            padding: 3rem;     /*this will 3 times of the html tag ie 75px*/
+
+        }
+        #third{
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="one">this is my first heading</h1>
+        <h1  d="two">this is my second heading</h1>
+        <h1 id="third">this is my third heading</h1>
+    </div>
+</body>
+</html>

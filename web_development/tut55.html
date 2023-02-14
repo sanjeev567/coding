@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates  in Js</title>
+
+    <style>
+        .container{
+            background-color: rgb(161, 130, 130);
+            font-size: 23px;
+            padding: 12px 5px;
+            margin: 12px 2px;
+            text-align: center;
+            border: 2px solid grey;
+
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        current time is: <span id="time"></span>
+    </div>
+    <script>
+        console.log("hello world !");
+        let date = new Date();
+       // date = new Date(0); //this will give us the reference time line by which time is shown to us.
+        console.log(date);
+
+        // let newdate = new Date("1998-02-08");
+        // console.log(newdate);
+
+       /* we can use that much of thing as argument in date given below:
+        let newdate = new Date("year, month, date, hours, minutes, second, milisecond")
+        
+            */
+           let newdate = new Date(2002,02, 8, 9,34, 45,23);  //these are called constructor which frame the objects:
+           console.log(newdate);
+
+           let yr = newdate.getFullYear();
+           console.log(yr);
+           let mt = newdate.getMonth();
+           console.log(mt);
+           let dt = newdate.getDate();
+           console.log(dt);
+           let hrs = newdate.getHours();
+           console.log(hrs);
+           let day = newdate.getDay();
+           console.log(day);
+
+
+           setInterval(updatetime, 1000);
+
+           function updatetime(){
+               time.innerHTML = new Date();
+           }
+
+    </script>
+    
+</body>
+</html>

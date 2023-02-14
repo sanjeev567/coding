@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <!-- 
+        css selector are the element like paragraph, div or container whose style is to set 
+        Basic types of css selectors are 
+            1> css element selectors 
+            2> css class selectors
+            3> css Id selectors
+            4> css grouping selectors
+     -->
+     <style>
+         p{
+             color: seagreen;
+         }
+         #divpara{  /*  # -> means Id*/
+             color: grey;
+         }
+         footer, span{  /*this is grouping css */
+             background-color: hotpink;
+         }
+         .firstpara{   /* . means class*/
+             color: rgb(252, 252, 86);
+            }
+            .bgcolor{
+             background-color: rgb(209, 52, 52);
+         }
+
+     </style>
+</head>
+<body>
+    <h3>CSS selectors</h3>
+    <p class="firstpara bgcolor">This is simple paragraph to demostrate css selectors:</p>
+    <!-- we can add two or more class in the same element -->
+    <p class="bgcolor">This is another  simple paragraph to demostrate css selectors:</p>
+    <p>This is another onesimple paragraph to demostrate css selectors:</p>
+    
+    <div>
+        <p id="divpara">This is more one simple paragraph to demostrate css selectors:</p>
+        <span>this is a span</span>
+    </div>
+    <footer>this is a footer</footer>
+
+    
+</body>
+</html>

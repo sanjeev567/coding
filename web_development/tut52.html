@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulating</title>
+    <!-- dom stands for document object model -->
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact us</li>
+            <li>Email us</li>
+        </ul>
+    </div>
+    <div class="container">this is another container</div>
+    <script>
+        let main = document.getElementById('main');//here we can see the div code in the browser by using getelementbyid
+        console.log(main);
+        let content = document.getElementsByClassName('container'); //this can return more than one element as we can give one element more than one class
+        console.log(content);
+
+        // let sel = document.querySelector('.container');
+        // console.log("selector returns: ",sel);
+        // let sel = document.querySelector('#nav>li');  //this wil return the first li of id nav ie home
+        // console.log("selector returns: ",sel);
+        let sel = document.querySelectorAll('#nav>li');  //this wil return all the li of id nav.
+        console.log("selector returns: ",sel);
+    </script>
+    
+</body>
+</html>

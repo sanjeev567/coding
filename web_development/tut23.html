@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <!-- CSS position :- static(default), relative, absolute, fixed, sticky. -->
+    <!-- relative means relative to its nornal position or parent position 
+        absolute means it will go down and overlap with other.-->
+
+</head>
+<style>
+    .container{
+        border: 2px solid rgb(10, 9, 9);
+        background-color: khaki;
+        height: 3443px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border: 2px solid red;
+
+    }
+    #box3{
+        /*position: relative;  /* this will let it down only space of it will be there (
+                                means space of 3rd box will not covered by other boxes.*/
+        /*position: absolute;  /*this will let 3th box down and all other three box will be n one row 
+                            (means space of 3rd box will be covered by the next ie 4th box or it will overlap with 3rd box*/
+        /* top :34px;
+        left: 40px; */
+        /*position: fixed;   /*fixed will fixed to the page 3rd box will fixed somewhere(left, reight, top and bottom)
+                while we scrolling it.*/
+                /* right: 40px;
+                top: 12px; */
+        position: sticky;  /*sticky will do the same as position but it will there where the are are rightnow  
+        it will move only in y direction not in x only that is the difference between fixed or sticky.*/
+         top: 100px;
+         /* right: 56px; here left or right written is inappropriate.*/
+
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    </body>
+
+</html>

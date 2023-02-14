@@ -1,0 +1,74 @@
+// here we apending li inside ullist by grabing input tag of form on submiting the form
+var ulList = document.getElementById('items');
+var form = document.getElementById('addForm');
+
+form.addEventListener('submit',addItem);
+ulList.addEventListener('click',removeItem) //by brad 
+
+function addItem(e){
+    e.preventDefault();  
+
+// grab input from form with id='item'
+item = document.getElementById('item').value;
+
+// create li 
+li = document.createElement('li');
+// set li class name
+li.className = 'list-group-item';
+
+// append textNode inside li
+li.appendChild(document.createTextNode(item));
+
+// create button
+btn = document.createElement('button');
+// set btn class name
+btn.className = 'btn btn-danger btn-sm float-right delete';
+
+// set inner text of btn
+btn.appendChild(document.createTextNode('X'));
+
+// append button inside li
+li.appendChild(btn);
+
+// append li inside ulList
+ulList.appendChild(li);
+
+}
+
+
+
+function removeItem(e){
+    if(e.target.classList.contains('delete')){
+        if(confirm('are you sure')){
+            // either remove that element directly (below one line)
+            // e.target.parentElement.remove();
+            // or remove element by calling its parent to remove child 
+            li = e.target.parentElement;
+            ulList.removeChild(li);
+        }
+    }
+    console.log();
+    
+}
+
+function filterItem(e){
+    e.preventDefault();
+    searchInp = e.target.value.toLowerCase();
+
+    // grabing all the li inside ulList
+    allLi = ulList.getElementsByTagName('li'); //since allLi is htmlcollection so we convert it to an array
+    Array.from(allLi).forEach(function(item){
+        // if(item.toLowerCase.value == searchInp)
+        var itemName = item.firstChild.textContent;
+        // here we match each index of itemName to searchInp if match then display block otherwise display none
+        if(itemName.toLowerCase().indexOf(searchInp) != -1){
+            item.style.display = 'block';
+        }
+        else 
+        item.style.display = 'none';
+    })
+}
+
+// V.V.I - whenever we need to apply eventListener we apply it on parent element
+//eg- to delete li from the ulList we apply eventListener on ulList not on button
+// similarly to add new item we apply eventListener on form not on submit button

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframe in css</title>
+
+    <style>
+        .container{
+            background-color: rgb(172, 145, 145);
+        }
+        .box{
+            display: flex;
+            background-color: rgb(167, 89, 89);
+            width: 25px;
+            height: 25px;
+            position: relative;
+            animation-name: sanjeev2;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out; */
+            /* ease-in -> starts slow at the begining then become fast   */
+            /* ease-out -> oppposite of ease-in  */
+            
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /* shorthand for animation  */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay
+            animation-iteration-count animation-fill-mode; */
+            animation: sanjeev1 3s ease-in-out 4s 3 alternate;
+
+
+        }
+        @keyframes sanjeev1 {
+            from{
+                width: 250px;
+            }
+            to{
+                width: 1400px;
+            }
+        }
+        @keyframes sanjeev2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is first box</div>
+        <div class="box">this is second box</div>
+        <div class="box">this is third box</div>
+    </div>
+    
+</body>
+</html>

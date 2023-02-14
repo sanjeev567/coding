@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        /* Basically two types of display 
+            1> inline display -> which takes space only where the content is 
+            2> block display -> which takes all that line space as a block
+            one special types of css display property is inline-block ie it will be inline as well as block element 
+            so that we can set it width ;
+*/
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            margin : auto;
+            display: block;
+            width: 1200px;
+
+        }
+
+        img {
+            /* width: 60px; */
+            width: 90px;
+            margin: auto;
+            display: block;
+            text-align: center; /*here text-align nothing do*/
+            
+        }
+
+        h3 {
+            margin: auto; /*here margin auto nothing do*/
+            text-align: center;
+            background-color: rgb(226, 176, 176);
+            border: 2px solid red;
+            width: 1195px;
+        }
+
+        .first {
+            border: 2px solid rgb(94, 94, 94);
+            background-color: rgb(209, 145, 145);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 2px auto;
+            padding: 19px 18px;
+            display: inline-block;
+            width: 1195px;
+        }
+
+        .container {
+            width: 1200px;
+            border: 2px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.mos.cms.futurecdn.net/MFHVMYQCeJHMGop4u8VkzJ.jpg" alt="error">
+        <h3>welcome to my channel</h3>
+    </header>
+    <div class="container">
+        <div class="first" id="item">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga illo ullam soluta nemo sed
+                reprehenderit? Quia quod vel mollitia ad praesentium quam voluptatibus enim rem sed. Porro adipisci
+                aperiam cupiditate reprehenderit ea dignissimos ducimus, quaerat, consequatur, nemo alias quae?</p>
+        </div>
+        <div class="first" id="item1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga illo ullam soluta nemo sed
+                reprehenderit? Quia quod vel mollitia ad praesentium quam voluptatibus enim rem sed. Porro adipisci
+                aperiam cupiditate reprehenderit ea dignissimos ducimus, quaerat, consequatur, nemo alias quae?</p>
+        </div>
+        <div class="first" id="item2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga illo ullam soluta nemo sed
+                reprehenderit? Quia quod vel mollitia ad praesentium quam voluptatibus enim rem sed. Porro adipisci
+                aperiam cupiditate reprehenderit ea dignissimos ducimus, quaerat, consequatur, nemo alias quae?</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

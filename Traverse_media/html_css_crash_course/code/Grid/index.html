@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6em;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid rgba(38, 73, 38, 0.2);
+            grid-gap: 12px;
+            /* grid-auto-rows: 100px; each rows is now of 100px tall */
+            grid-auto-rows: minmax(100px, 100px);
+            
+        }
+        .box{
+            border: 1px solid pink;
+            background: green;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to the grid tutorial</h1>
+    <div class="container">
+        <div id="box-1" class="box">this is box one</div>
+        <div id="box-2" class="box">this is box two</div>
+        <div id="box-3" class="box">this is box three</div>
+        <div id="box-4" class="box">this is box four</div>
+        <div id="box-5" class="box">this is box five</div>
+        <div id="box-6" class="box">this is box six</div>
+        <div id="box-7" class="box">this is box seven</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeout and cleartimeout in js</title>
+    
+
+
+</head>
+<body>
+    // setTimeout --> Alllows us to run the function once after the interval of time
+    // clearTimeout --> Alllows us to run the function repeatedly after the interval of time
+    <div class="container">
+       <span id="time">now time is:</span>
+    </div>
+    <script>
+        console.log("hello world!");
+    
+        function greet(name, text){
+            console.log("hello Good morning " +name+ " "+text);
+        }
+        // timeout=setTimeout(greet, 5000, "sanjeev", "welcome to my channel");
+
+
+        // setTimeout(greet(), 5000, "sanjeev", "welcome to my channel");  //wrong as it is calling ////the greet fn inside setTimeout
+
+
+        // console.log(timeout);
+        // clearTimeout(timeout); //ths will helps us to cancel what we are scheduling the task using settimeout
+        // eg-suppose you want to give message sign up in your site after reading 20 secs and user done sign up whithin 20 secs 
+        //then your message will become vague so at that time we can use clearTimeOut.
+        
+        
+        //if we use this then timeout will not call settimeout as it name 
+        //suggest cleartimeout so we use these types of thing in order to ask user to signup after 10sec or something like that.
+        
+        
+        intervalId = setInterval(greet,5000, "sanjeev", "cse");  //basically this returns an id though which we can manipulate it
+        // at each 5 sec greet fn will invoked
+        clearInterval(intervalId);
+        function display_time(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML= time;
+
+        }
+        setInterval(display_time, 1000);
+            </script>
+
+</body>
+</html>

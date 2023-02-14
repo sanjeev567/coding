@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | string and string method</title>
+
+</head>
+<body>
+    <div class="container">
+        <din id="content"></din>
+        <h3>this is my heading </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis unde dolores nostrum accusamus eos maxime rem illo repudiandae quibusdam sunt qui numquam deleniti accusantium, tenetur optio ullam eveniet reiciendis repellendus ipsum quia iusto.</p>
+
+    </div>
+    <script>
+        var string = "sanjeev";
+        var single ='single"s';
+        var double ="sdouble's";
+        var title = "singh";
+        var Occupation = "programmer";
+        var temp = `${string} is a nice person and with its title ${title}`
+        // in `` you can use both '' or "".
+        
+        // console.log(string + title + Occupation);
+        console.log(temp);
+        var len = string.length;
+        console.log(`length of string is ${len}`);
+        document.getElementById('content').innerHTML = `<h3>This is an h3 heading: </h3>`
+    </script>
+    
+</body>
+</html>

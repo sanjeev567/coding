@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{   /*universal selector   ->this will apply on all the elements*/
+            box-sizing: border-box;  /*this wil make your width as you defined it, no any changes due to margin and padding.*/
+            margin: 0px;
+            padding: 0px;   /*this will set margin and padding to 0 until and unless you don't overwrite it later.*/
+        }
+        body{
+            background-color: #87906a;
+        }
+        .container{
+            color: #fffb78;
+            background-color: hsl(146deg 45% 24%);
+            border: 2px solid blue;
+            width: 633px;
+            height: 88px;
+            /* height: 100px; */
+            /* if we want to give margin/padding to the left right or top or right then */
+            /* padding-left: 23px;
+            padding-right: 20px;
+            padding-top: 29px;
+            padding-bottom: 23px; */
+            /* padding: 25px 23px;  /*(top-bottom left right)*/
+            font-size: 23px;
+            margin: 18px 75px;
+             padding : 1px 6px 177px 16px;     /*  padding : top right bottom left;   */
+             
+             border-radius: 32px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>this is the heading</h4>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea modi a rem tempore soluta, hic velit facilis. Eius perferendis corrupti aspernatur accusantium ab voluptate suscipit, fugit aliquid, saepe veniam eos nisi at facere quae?</p>
+    </div>
+    <div class="container">
+        <h4>this is the heading</h4>
+        <p id="second">Lorem ips Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum sequi neque cumque accusamus laborum officia amet cum, maiores optio? natur accusantium ab voluptate suscipit, fugit aliquid, saepe veniam eos nisi at facere quae?</p>
+    </div>
+    <div class="container">
+        <h4>this is the heading</h4>
+        <p id="third">Lorem ipsum dothisi sfjklsajiofk sio sicing elit. Ea modi a rem tempore soluta, hic velit facilis. Eius perferendis corrupti aspernatur accusantium ab voluptate suscipit, fugit aliquid, saepe veniam eos nisi at facere quae?</p>
+    </div>
+</body>
+</html>

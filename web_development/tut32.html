@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties</title>
+
+    <style>
+        :root{  /*this is like global variable which can be access by anyone */
+            --box-color1:cyan;
+            --primary-color:green;
+            --secondary-color:rgb(236, 32, 151);
+            --max-width:433px;
+        }
+        .box{
+            --box-color:violet;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 2px 3px ;
+            padding: 3px 4px;
+            background-color:var(--box-color1);
+            /*the box color wil work only in this box it would'nt work in .container bcoz it is like local variables 
+            which scope is only inside this box*/
+            color: green;
+
+        }
+        .container{
+            display: flex;
+            width: var(--max-width);
+            background-color : var(--secondary-color);
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box one </div>
+        <div class="box">this is box two</div>
+        <div class="box">this is box three</div>
+    </div>
+    
+</body>
+</html>

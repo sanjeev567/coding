@@ -1,0 +1,236 @@
+@media screen and (max-width :990px) {
+
+
+    .bg1-card h2 {
+        top: 14vh;
+        font-size: 4vw;
+    }
+
+    .bg2-card {
+        top: 24vh;
+    }
+
+    .fitbit {
+        width: 42vw;
+        max-height: 62vhvh;
+        /* position: absolute; */
+        top: 32vh;
+        left: 30vw;
+    }
+
+    .d-img {
+        width: 42vw;
+        max-height: 62vh;
+    }
+
+    .cr1-item {
+        display: block;
+        margin: 40vh -28vw;
+
+    }
+
+    .btn-1 {
+        position: absolute;
+        top: -2vh;
+        left: -6vw;
+        width: 42vw;
+        height: 12vh;
+        border-radius: 37px;
+        font-size: 4vw;
+    }
+
+    .bg2-card img {
+        /* min-height: calc(129vh +1vw); */
+        min-height: 122vh;
+    }
+
+    .para {
+        position: absolute;
+        top: 18vh;
+        width: 35vw;
+
+    }
+
+    .str1 {
+        font-family: 'Joan', serif;
+        font-size: 4vw;
+        position: absolute;
+        top: 6vh;
+        left: 6vw;
+        width: 37vw;
+    }
+
+    .str2 {
+        font-family: 'Joan', serif;
+        font-size: 3vw;
+        position: absolute;
+        top: -3vh;
+        left: -1vw;
+        border-bottom: 2px solid black;
+        padding: 1.5vh 1vw;
+
+    }
+
+    #t-cent {
+        position: absolute;
+        top: 13vh;
+        font-size: 2vw;
+        width: 37vw;
+        left: -1vw;
+    }
+
+
+
+
+
+    /* feature */
+
+    .f1 {
+        top: 96vh;
+    }
+
+    .f2 {
+        flex-direction: column;
+    }
+
+    .f2-item {
+        width: 71vw;
+    }
+
+    .f2-item img {
+        width: 23vw;
+        height: 21vh;
+    }
+
+    .img-item {
+        justify-content: start;
+        margin-left: 3vw;
+    }
+
+    .f2-item h3 {
+        font-size: 3.7vw;
+        width: 41vw;
+        float: left;
+        margin-left: 26vw;
+        margin-top: -16vh;
+    }
+    .sanjeev{
+        margin-bottom: 12vh;
+        height: 228vh;
+    }
+
+
+}
+
+@media screen and (max-width :714px) {
+    .fitbit {
+        width: 38vw;
+        max-height: 42vh;
+        top: 32vh;
+        left: 30vw;
+    }
+
+    .d-img {
+        width: 38vw;
+        max-height: 42vh;
+    }
+
+    .btn-1 {
+        top: -23vh;
+        height: 10vh;
+    }
+
+    .para {
+        top: -3vh;
+    }
+
+    #t-cent {
+        top: 13vh;
+        font-size: 2.2vw;
+    }
+
+    .bg2-card img {
+        min-height: 105vh;
+    }
+
+    .f1 {
+        top: 76vh;
+    }
+
+    .f2 {
+        margin-left: 7vw;
+    }
+    .sanjeev{
+        margin-bottom: 12vh;
+        height: 208vh;
+    }
+
+}
+
+@media screen and (max-width :400px) {
+
+    .bg1-card img{
+        height: 25vh;
+    }
+    
+    .bg1-card h2{
+        font-size: 6vw;
+        left: 27vw;
+        top: 11vh;
+    }
+    .bg2-card {
+        top: 16vh;
+      }
+
+    .fitbit {
+        width: 48vw;
+        min-height: 32vh;
+        top: 22vh;
+        left: 30vw;
+    }
+
+    .d-img {
+        width: 48vw;
+        min-height: 32vh;
+    }
+
+    .btn-1 {
+        top: -44vh;
+        height: 7vh;
+        left: -4vw;
+        width: 46vw;
+    }
+
+    .para {
+        top: -28vh;
+    }
+
+    .str2 {
+        left: 2vw;
+
+    }
+
+    .str1 {
+        top: 4vh;
+        left: 9vw;
+    }
+    #t-cent{
+        top: 8vh;
+        left: 5vw;
+    }
+    .bg2-card img {
+        min-height: 75vh;
+    }
+    .f1 {
+        top: 52vh;
+    }
+    .f2-item{
+        margin: 2vh 2.5vw;
+        padding: 2vh 1vw;
+    }
+    .str1{
+        left: 5vw;
+        font-size: 5vw;
+    }
+
+}

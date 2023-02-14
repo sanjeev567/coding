@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=La+Belle+Aurore&family=Playball&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.img-logo {
+    width: 10vw;
+}
+
+.img-logo img {
+    width: 10vw;
+}
+
+ul li {
+    margin: 2vh 2vw;
+    padding: 2vh 2vw;
+    font-size: 1.2vw;
+}
+
+/* container part */
+
+.bg1-card {
+    margin: 3vh 0vw;
+}
+
+.card-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1-card img {
+    width: 92vw;
+    height: 40vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg1-card h2 {
+    position: absolute;
+    color: white;
+    top: 25vh;
+    left: 37vw;
+    font-family: 'Old Standard TT', serif;
+
+
+}
+
+
+.bg2-card {
+    position: absolute;
+    top: 40vh;
+    left: auto;
+
+}
+
+.bg2-card img {
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80vw;
+    min-height: calc(88vh + 1vw);
+}
+
+/* corousel */
+
+.fitbit {
+    
+    width: 25vw;
+    max-height: 65vh;
+    position: absolute;
+    top: 48vh;
+    left: 16vw;
+}
+
+.d-img {
+    width: 25vw;
+    max-height: 65vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cr1-item {
+    position: absolute;
+    top: 56vh;
+    left: 63vw;
+}
+
+/* feature section */
+#f-heading{
+    display: flex;
+    justify-content: center;
+    font-family: 'Old Standard TT', serif;
+
+}
+.f1 {
+    position: relative;
+    top: 70vh;
+}
+
+
+.f2 {
+    border: 1px solid black;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.f2-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 24vw;
+    margin: 2vh 1.5vw;
+    padding: 8vh 0vw;
+
+}
+
+.f2-item img {
+    display: flex;
+    width: 12vw;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.f2-item h3{
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+
+}
+
+.img-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sanjeev{
+    margin-bottom: 12vh;
+    height: 120vh;
+}

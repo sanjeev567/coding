@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        
+        body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+
+    header{
+        grid-column: 1 / 3;
+        grid-row: 1;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+    }
+    footer {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+    }
+    article{
+        grid-column: 2 ;
+        grid-row: 2;
+    }
+
+    aside {
+        grid-column: 1;
+        grid-row: 2;
+        border-right: 1px solid #999;
+    }
+    </style> -->
+
+    <!-- another way to using grid -->
+    <!-- simiply add tag name like below  -->
+    <style>
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+
+    header {
+        grid-area: header;
+        background: cyan;
+        border: 2px solid pink;
+        padding:12px 12px;
+        border-radius: 7px;
+        text-align: center;
+
+    }
+
+    article {
+        grid-area: content;
+        margin-left: 12px;
+    }
+
+    aside {
+        margin-left: 23px;
+        grid-area: sidebar;
+        border-right: 1px solid black;
+
+    }
+
+    footer {
+        grid-area: footer;
+        background: cyan;
+        border: 2px solid pink;
+        padding:12px 12px;
+        border-radius: 7px;
+        text-align: center;
+    }
+    </style>
+</head> 
+<body>
+    <div class="container">
+    <header>Welcome to grid tutorial part 2</header>
+    <article>
+        <h1>para 1 | Live young</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus deleniti facere repellendus consequatur maiores totam quas nemo quisquam, nisi, maxime blanditiis ipsum earum voluptatibus magni neque esse, ratione atque in dolores. Accusamus, officiis. Soluta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, unde quia nemo vero, odio iure eum ab fuga soluta debitis quasi ut. Illo quidem quibusdam fugit deleniti itaque corrupti dolores non impedit quia exercitationem.</p>
+
+    </article>
+    <aside>
+        <h1>Sidebar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, nihil voluptatem quaerat officia ducimus, culpa mollitia numquam exercitationem consequuntur id dolorem laudantium possimus.</p>
+
+    </aside>
+    <footer>Contact me @example.com</footer>
+
+    </div>
+</body>
+</html>

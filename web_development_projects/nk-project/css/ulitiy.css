@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Joan&family=La+Belle+Aurore&family=Old+Standard+TT:ital@1&family=Playball&display=swap');
+
+
+.b-radius {
+    border-radius: 67px;
+}
+
+.b-radius2 {
+    border-radius: 30px;
+}
+
+.str1 {
+    font-family: 'Joan', serif;
+    font-size: 3vw;
+}
+
+.str2 {
+    font-family: 'Joan', serif;
+    font-size: 2vw;
+   
+}
+
+#cut {
+    text-decoration: line-through;
+}
+
+#discount {
+    color: green;
+    font-family: 'Playball', cursive;
+}
+
+#t-cent {
+    width: 18vw;
+    font-size: 1vw;
+    font-family: 'Old Standard TT', serif;
+}
+
+.btn-1 {
+
+    width: 19vw;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Joan', serif;
+    height: 13vh;
+    border-radius: 25px;
+    margin-top: 5vh;
+    font-size: 2vw;
+}
+
+.f2-item h3 {
+    font-size: 1.7vw;
+}
+
+.sh1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid black;
+    border-radius: 5px;
+}

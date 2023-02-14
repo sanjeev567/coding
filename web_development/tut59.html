@@ -1,0 +1,17 @@
+<!-- welcome to node.js tutorial  -->
+<!-- 1 download node.js from the browser then install it then let it download some modules 
+now you ready for use open vscode ->go to terminal-> new terminal write node and enter now you can write js code here  -->
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

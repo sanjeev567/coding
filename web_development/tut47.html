@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of variable | if else conditional statements</title>
+
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact us</li>
+            <li class="item">Email us</li>
+
+        </ul>
+    </div>
+    <script>
+        var string1 = "this is sanjeev";
+        var string1 = "this is string1";  
+        // although in c and c++ once you declare a variable with any name then you can't declare another variable with 
+        // same name but here the last updated value will be reflected to the console
+        //since var has a glabal scope so we use let instead of var.
+        let a = "name";
+        {
+            let a = "singh";
+            console.log(a);  //here a is local to the brackets so singh will be printed in the console
+        }
+        console.log(a);   //but here name will be printed (think why?)
+
+        console.log(string1);
+
+        let age =18;
+        if (age>=18){
+            console.log("you can drive a car");
+        }
+            else{
+
+                console.log("you can't drive a car");
+            }
+
+        const variable = 34;
+        switch(variable){
+
+            case 1:
+                console.log("this is case 1 ");
+                break;
+            case 2:
+                console.log("this is case 2");  //if break will not apply then which matches and down of that will be printed.
+                break;
+            case 34:
+                console.log("this is case 34 which exactly matches with the const variable:");
+                break;
+            default: 
+            console.log("Invalid input!");
+
+        }
+    </script>
+    
+</body>
+</html>

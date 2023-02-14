@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOre on selectors</title>
+    <style>
+        .container{
+            /* color: red;border */
+            border: 2px solid red;
+
+
+        }
+        div p{  /*whetehr how much inside the div it will apply on it*/
+            /* color: yellow; */
+        }
+        div > p{  /*this will apply on the paragraph right after the div */
+            background-color: rgb(233, 47, 47);
+        }
+        div + p{ /*this will apply on whose previous siblings is div*/
+            color: rgb(70, 70, 45);
+            background-color: cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>this is an paragraph</p>
+            <ul><li>
+                <p>this is another paragraph inside li </p>
+            </li></ul>
+            <p>hello ji kaise ho sare</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

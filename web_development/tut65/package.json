@@ -1,0 +1,25 @@
+{
+  "name": "tut65",
+  "version": "1.0.0",
+  "description": "this is tut65.js tutorial",
+  "main": "tut65.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "best",
+    "node.js",
+    "module",
+    "and",
+    "packages"
+  ],
+  "author": "Sanjeev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "slugify": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

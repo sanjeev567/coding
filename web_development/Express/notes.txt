@@ -1,0 +1,6 @@
+here we learn to route page in express 
+
+also learn to use pug 
+    for that we create a static folder then also we create views folder 
+    content inside demo.js is from pug documentation you can visit and see that
+    

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid in css</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 100px 100px 199px;  /*this will make 3 rows with defined px and all otehr will remains default*/
+            grid-auto-rows: 3rem;  /*this is for those rows which not defined above (this property is for like 4,5,6,....10)*/
+            grid-template-columns: repeat(6,auto);
+            /* grid-gap: 3rem; */
+
+        }
+        .item{
+            background-color: orange;
+            border: 2px solid black;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">this is item-1 </div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+    </div>
+    
+</body>
+</html>

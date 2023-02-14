@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            /* border: 2px solid red; */
+            background-color: rgb(221, 182, 182);
+            margin: 3px 4px;
+            padding: 4px 4px;
+            /*box-shadow: x-offset y-offset color*/
+            box-shadow: 3px 4px  green; 
+
+            /*box-shadow: x-offset y-offset blur color*/
+            box-shadow: 3px 4px 10px green;
+
+            /*box-shadow: x-offset y-offset blur  spread radius color color*/
+            box-shadow: 3px 4px 10px 10px green;
+            /*first one wil be shadow on x axis, 2 will on y axis, 3 is for bluring, 4 is for spreading radius and in the last you have to give color want you want.*/
+
+            box-shadow: 3px 4px 10px 10px rgba(133, 155, 133,0.5);
+            /*rgba is for red blue green and alfa alfa is resposible for darkness
+            maximum the value of alfa higher  will be darkness. */
+
+            box-shadow: inset 12px 23px yellow;
+            box-shadow: 3px 4px red, 3px 4px rgb(29, 37, 29);
+                  }
+
+            h3{
+                text-shadow: 2px 2px white; /*all above property of box-shadow will also apply on this
+                negative value will make property in the upward direction*/
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h3>This is heading one </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero animi debitis suscipit maxime obcaecati unde ratione officiis consectetur est aliquam at officia, culpa numquam placeat corrupti ipsam delectus consequatur molestias, eius non laborum explicabo.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h3>This is heading second</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero animi debitis suscipit maxime obcaecati unde ratione officiis consectetur est aliquam at officia, culpa numquam placeat corrupti ipsam delectus consequatur molestias, eius non laborum explicabo.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h3>This is heading third</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero animi debitis suscipit maxime obcaecati unde ratione officiis consectetur est aliquam at officia, culpa numquam placeat corrupti ipsam delectus consequatur molestias, eius non laborum explicabo.</p>
+        </div>
+       
+    </div>
+    
+</body>
+</html>

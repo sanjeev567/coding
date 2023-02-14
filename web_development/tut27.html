@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <!-- media queries is used to display specific css for specific screen resolution like different for phones and different for computer and tablets -->
+    <style>
+        .box{
+            background-color: rgb(139, 79, 79);
+            color: white;
+            text-align: center;
+            font-size: 72px;
+            display: none;  /*display none will make your page fully white as we discussed earlier*/
+
+        } 
+        @media(max-width: 300px){
+            #box-1{
+                display: block;
+                background-color: rgb(201, 102, 102);
+                color: white;
+                
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            #box-2{
+                display: block;
+                background-color: rgb(13, 68, 30);
+                color: rgb(70, 113, 206);
+
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width: 800px){
+            #box-3{
+                display: block;
+                background-color: rgb(167, 23, 23);
+                color: rgb(211, 236, 69);
+
+            }
+        }
+        @media only screen and (min-width:800px) {
+            #box-4{
+                display: block;
+                background-color: rgba(233, 27, 240, 0.068);
+                color: rgb(91, 110, 126);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">main ek iphone hoon</div>
+    <div class="box" id="box-2">main ek tablet hoon</div>
+    <div class="box" id="box-3">main ek computer hoon</div>
+    <div class="box" id="box-4">main ek widescreen computer hoon</div>
+    
+</body>
+</html>

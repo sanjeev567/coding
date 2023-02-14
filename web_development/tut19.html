@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alingment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            /* margin: 0px;
+            padding: 0px; */
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+    .container{
+        width: 600px;
+        margin:  33px auto ; /*margin auto will adjust your container to the centre  */
+        border: 3px solid grey;
+        background-color: rgb(184, 147, 147);
+        
+
+    }
+    .items{
+        padding: 23px 20px;
+        margin: 2px 2px;
+        border: 2px solid red;
+        background-color: rgb(207, 243, 210);
+
+    }
+    #fruitpara{
+        width: 48%;
+        float: left;
+
+    }
+    #vegetablespara{
+
+        width: 48%; /*whenever we give float we also have to give width also:*/
+        float: left;
+    }
+    #beveragepara{
+
+        width: 100%;
+        float: left;
+        clear: left;  /*this means no any float element will overlap on me*/
+        clear: both;  /*now either left floating or right floating elements no one will now overlap with me*/
+    }
+    p, h4{  /*this means p and h4 only*/
+        /* text-align: right; */
+        /* text-align: left; */
+        /* text-align: center; */
+        text-align: justify;
+    
+    } 
+    h3{
+        text-align: center;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h3>Grocery store</h3>
+        <div class="items" id="fruitpara">
+            <h4>fruits</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore repellat consectetur cupiditate culpa nisi! Eaque cumque magni molestias quam vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab voluptate vero, saepe ipsam modi et. Numquam necessitatibus odit deleniti! Consequatur, tempora! Nihil aperiam perspiciatis eligendi accusamus fuga vel possimus.</p>
+        </div>
+        <div class="items" id="vegetablespara">
+            <h4>vegetables</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore repellat consectetur cupiditate culpa nisi! Eaque cumque magni molestias quam vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore inventore, sapiente deleniti dolores ea laudantium amet mollitia alias aspernatur delectus, animi necessitatibus voluptatibus. Consectetur aut eos eius error soluta cum.</p>
+        </div>
+        <div class="items" id="beveragepara">
+            <h4>beverage</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore repellat consectetur cupiditate culpa nisi! Eaque cumque magni molestias quam vitae?</p>
+        </div>
+        <div class="items" id="medicine">
+            <h4>medicine</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore repellat consectetur cupiditate culpa nisi! Eaque cumque magni molestias quam vitae?</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+getbootstrap projects step by step hints
+
+1> go to components and copy paste starter template.
+
+2> go to navbar and add settings(like set title of the navbar, make different pages like home, about, contact 
+see whether diabled tab you need or not if yes then ok otherwise remove that.
+
+
+3>Carousel (slider) -> go to bootstrap and select any and set the src of the photos for see the slider 
+

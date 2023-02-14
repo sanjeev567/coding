@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z index</title>
+    <style>
+        .box{
+            width: 150px;
+            height:  150px;
+            border: 2px solid black;
+          
+
+        }
+        #boc1{
+
+            background-color: rgb(158, 17, 17);
+            position: relative;
+            top: 23px;
+            z-index: -1; /*whose z-index value will be high that will be upper here it is less than boc2 so it will be down to it*/
+        }
+        #boc2{
+            /* z-index: will work only when we use position element like relative, absolute, fixed or sticky; */
+            position: relative;
+            top: 34px;
+            z-index: 23;
+            
+
+            background-color: rgb(65, 112, 11);
+            /*display: none; /*display none will hide the boc and its space */
+             visibility: hidden;  /*visibility hidden will just hide the element not its space*/
+        }
+        #boc3{
+            background-color: rgb(17, 31, 224);
+        }
+        #boc4{
+
+            background-color: rgba(238, 204, 12, 0.281);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="boc1"></div>
+    <div class="box" id="boc2"></div>
+    <div class="box" id="boc3"></div>
+    <div class="box" id="boc4"></div>
+    
+</body>
+</html>

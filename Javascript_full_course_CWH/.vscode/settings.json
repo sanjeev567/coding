@@ -1,0 +1,5 @@
+{
+    "diffEditor.wordWrap": "on",
+    "editor.mouseWheelZoom": true,
+    "liveServer.settings.port": 5502
+}

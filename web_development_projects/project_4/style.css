@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: aqua; */
+    /* color: black; */
+}
+/* nagivation bar */
+#navbar{
+    display: flex;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(41, 36, 36, 0.322);
+
+
+}
+#logo{
+    border: 2px solid grey;
+    border-radius: 10px;
+    
+}
+#logo img{
+    height: 55px;
+
+}
+#navbar ul{
+    display: flex;
+}
+.item{
+    text-decoration: none;
+    /* text-decoration: none; */
+    list-style: none;
+    padding: 10px 22px;
+    margin: 2px 3px;
+}
+.item a{
+    text-decoration: none;
+    color: white;
+}
+.item a:hover{
+    background-color: rgb(158, 96, 96);
+    padding: 2px 6px;
+    border-radius: 20px;
+}
+
+
+
+/* Home section */
+
+
+
+#Home{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 68px;
+    margin-bottom: 233px;
+}
+#Home ::before{
+    content: "";
+    background: url('img/frd_grp1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    /* height: auto; */
+    opacity: 0.8;
+    z-index: -1;
+
+}
+#Home p{
+    padding: 12px 34px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* services seciton */
+#services{
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+#services h1{
+    align-items: center;
+
+}
+#services .box{
+    
+    border: 2px solid brown;
+    margin: 21px 23px;
+    border-radius: 10px;
+    padding: 12px 24px;
+}
+#services .box img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 12px 24px;
+}
+
+/* Our community section */
+/* #community-section{
+    position: relative;
+    height: auto;
+    width: auto;
+} */
+#community{
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    /* padding: 45px 68px;
+    margin-bottom: 233px; */
+
+}
+#community .clients{
+    border: 2px solid brown;
+    margin: 3px 5px;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+#community .clients img{
+    width: 380px;
+}
+/* #community ::before{
+    content: "";
+    background: url('img/frd_grp2.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    height: 50%;
+    height: auto;
+    opacity: 0.8;
+    z-index: -1;
+}
+     */
+
+
+
+
+
+/* contact section */
+
+
+/* utility classes */
+.h-primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    
+
+}
+.h-secondary{
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.4rem;
+    
+
+}

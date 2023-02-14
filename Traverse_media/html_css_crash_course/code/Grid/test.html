@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(13, 1fr);
+            /* background-color: grey; */
+        }
+        header{
+            grid-column: 1 / 13;
+            grid-row: 1;
+            background: #333;
+        }
+        article{
+            background: #f4f4f4;
+            grid-column: 4 / 13;
+            grid-row: 2;
+            margin-left: 12px;
+
+        }
+        aside{
+            background: #f4f4f4;
+
+            grid-column: 1 / 4;
+            grid-row: 2;
+            border-right: 1px solid #333;
+        }
+        footer{
+            grid-column: 1 / 13;
+            grid-row: 4;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>This is heading !</h1></header>
+        <article>
+            <h1>para 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, consequuntur magnam ipsam fugiat, nobis, quasi maiores nesciunt id amet dolor blanditiis esse rem. Aperiam quaerat, quam aut saepe tenetur nobis eius quas optio fugiat explicabo officiis exercitationem earum vitae facere temporibus, dolorem ipsam culpa numquam.</p>
+
+        </article>
+        <aside>
+            <h1>Sidebar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestias aperiam odio voluptas minus nisi, fuga eius aspernatur perspiciatis praesentium.</p>
+        </aside>
+        <footer><p>All rights reserved, &copy; 2022</p></footer>
+    </div>
+</body>
+</html>

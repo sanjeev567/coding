@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string | and slicing of string</title>
+
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, fuga delectus id libero maiores numquam odio optio placeat temporibus perferendis ad dolores autem ex earum odit sed sint amet veniam perspiciatis recusandae reiciendis. Pariatur!</p>
+
+
+        <script>
+            var str = "this is a javascript tutorial:\n";
+            console.log(str);
+
+            //indexof returns first occurance of a string
+            var position = str.indexOf('is');
+            console.log(position);
+            //lastindexof returns last occurance of a string
+            position = str.lastIndexOf('is');
+
+            console.log(position);
+            var substr = str.slice(1,4);  //with this we can slice our string acc to our need:
+            console.log(substr);
+// while we using replace our original str remain same only replace will get replace with that string.
+            
+            var replace = str.replace('tutorial', 'ravish');
+
+            console.log(str);
+            console.log(replace)
+
+            console.log(str.toUpperCase());  //this will convert our string in lower case letters
+            console.log(str.toLowerCase());  //this will convert our string in upper case letters.
+            var concat = str.concat('newstring');
+            console.log(concat) ;  //this is generally avoided we use + operator to concatinate any string
+            //but for knowledge we should know this method also.
+            var trimstring = "       this is           triming           ";
+            console.log(trimstring.trim()); //this will tream whitespace from the begining and the end as well.
+            var char2 = str.charAt(2);
+            console.log(char2);
+
+            console.log(str[2]);  //this will gives char at index 2 ie i
+        </script>
+    </div>
+    
+</body>
+</html>
